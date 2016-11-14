@@ -5,7 +5,7 @@ var WeatherForm = React.createClass({
     e.preventDefault();
 
     var location = this.refs.location.value;
-    
+
     if(location.length > 0)
     {
       this.refs.location.value = '';
@@ -20,7 +20,7 @@ var WeatherForm = React.createClass({
           <input type="text" ref="location" placeholder="Enter City Name"/>
         </div>
         <div>
-          <button>Get Weather</button>
+          <button className="button expanded hollow">Get Weather</button>
         </div>
       </form>
     );
